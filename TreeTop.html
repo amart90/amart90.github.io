@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Topography Ridges | Portfolio | Anthony Martinez | https://github.com/amart90/TopoRidge
+	Tree Top and Canopy Segmentation | Portfolio | Anthony Martinez | https://github.com/amart90/TreeTopAndSegmentation
 	Original template: Stellar by @ajlkn at HTML5 UP
 -->
 <html>
@@ -20,7 +20,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Topography Ridges</h1>
-						<p>State topography in the style of the Joy Division's iconic "Unknown Pleasures" album cover.</p>
+						<p>State topography in the style of the Joy Division's iconic "Unknow Pleasures" album cover.</p>
 					</header>
 
 				<!-- Main -->
@@ -34,11 +34,14 @@
 								
 									<h2>The Code</h2>
 									<p><span class="image left"><img src="images/ID.png" alt="" /></span>
-								<p>This script takes a statewide digital elevation model (DEM). In this case, I used a 300m-resolution DEM. 
-									The raster is then smoothed and passed to the ggRidges package.
-									Attibutes such as color or or line spacing can easily be changed using ggplot2 grammar.</p>
+								<p>The model uses a multiple criteria analysis (MCDA) system called the Environmental Evaluation Modeling System (EEMS; <a href="https://consbio.org/products/publications/platform-independent-fuzzy-logic-modeling-framework-environmental-decision-support">Sheehan & Gough, 2016</a>). 
+									EEMS is a platform-independent fuzzy logic MCDA modeling framework, developed specifically to provide environmental decision support. 
+									It works by evaluating the degree of truth or falseness of hierarchically arranged propositions, linked and combined with operators (AND, OR, etc.).</p>
+								<p>For this model, the final proposition to be evaluated for each unburned island with the given fire perimeter is “<i>this unburned island is important for spotted owl habitat</i>.” 
+									The degree of truth of that proposition is evaluated from a combination of the following: (1) “<i>the area within this refugia is important for spotted owls</i>” and (2) “<i>the area surrounding this refugia is important to spotted owls</i>.” 
+									Those propositions are then determined using a suite of input datasets.</p>
 								<h2>More Information</h2>
-								<p>This code can be viewed in <a href="https://github.com/amart90/TopoRidge">GitHub</a>.</p>
+								<p>This code can be viewed in <a href="https://github.com/amart90/TreeTopAndSegmentation">GitHub</a>, which includes the code for all the graphs seen in Chapter 4 of my thesis.</p>
 							</section>
 
 					</div>
